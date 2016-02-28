@@ -17,11 +17,25 @@
 		android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
 		android:textColor="#fff"
-		android:textSize="24sp" />
+		android:textSize="24sp"
+		/>
+		<Button 
+		    android:id="@+id/switchCity"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="left"
+		    android:text="switchCity"/>
+		<Button 
+		    android:id="@+id/refreshWeather"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    
+		    android:layout_alignParentRight="true"
+		    android:text="refreshWeather"/>"
 	</RelativeLayout>
 	
 	<RelativeLayout
-	    android:id="@+id/switchCity"
+	   
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="1"
@@ -57,7 +71,7 @@
 		android:textColor="#FFF"
 		android:textSize="40sp" />
 				<LinearLayout
-				    android:id="@+id/refreshWeather"
+				    
 					android:layout_width="wrap_content"
 					android:layout_height="60dp"
 					android:layout_gravity="center_horizontal"

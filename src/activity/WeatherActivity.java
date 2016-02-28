@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import cool.com.example.coolweather2.R;
 import service.AutoUpdateService;
@@ -95,8 +96,7 @@ finish();
 break;
 case R.id.refreshWeather:
 publishText.setText("同步中...");
-SharedPreferences prefs = PreferenceManager.
-getDefaultSharedPreferences(this);
+SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 String weatherCode = prefs.getString("weather_code", "");
 if (!TextUtils.isEmpty(weatherCode)) {
 queryWeatherInfo(weatherCode);
@@ -118,8 +118,7 @@ queryFromServer(address, "countyCode");
 * 查询天气代号所对应的天气。
 */
 private void queryWeatherInfo(String weatherCode) {
-String address = "http://www.weather.com.cn/data/cityinfo/" +
-weatherCode + ".html";
+String address = "http://www.weather.com.cn/data/cityinfo/" +weatherCode + ".html";
 queryFromServer(address, "weatherCode");
 }
 /**
