@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -49,11 +50,11 @@ private TextView currentDateText;
 /**
 * 切换城市按钮
 */
-private Button switchCity;
+private ImageButton switchCity;
 /**
 * 更新天气按钮
 */
-private Button refreshWeather;
+private ImageButton refreshWeather;
 
 
 @Override
@@ -69,8 +70,8 @@ weatherDespText = (TextView) findViewById(R.id.weather_desp);
 temp1Text = (TextView) findViewById(R.id.temp1);
 temp2Text = (TextView) findViewById(R.id.temp2);
 currentDateText = (TextView) findViewById(R.id.current_date);
-switchCity = (Button) findViewById(R.id.switchCity);
-refreshWeather = (Button) findViewById(R.id.refreshWeather);
+switchCity = (ImageButton) findViewById(R.id.switchCity);
+refreshWeather = (ImageButton) findViewById(R.id.refreshWeather);
 String countyCode = getIntent().getStringExtra("county_code");
 if (!TextUtils.isEmpty(countyCode)) {
 // 有县级代号时就去查询天气
